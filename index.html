@@ -47,13 +47,14 @@ td{
 }
 #head{
     font-size: 40px;
-    font-weight: bolder;
+    font-weight: lighter;
     text-align: center;
+    font-family:   Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 table{
     border: 3px solid black;
     border-radius: 10px;
-    
+    font-family: cursive;
 }
 
 #container{
@@ -71,6 +72,7 @@ grid-template-columns: 90% auto;
 
 body{
     background-color: aqua;
+
 }
 table{
     background-color: grey;
@@ -80,16 +82,27 @@ input{
     width: 80px;
 }
 #logandsign{
-    font-size: 15px;
+    font-size: 25px;
 }
-
+td{
+    font-size: 30px;
+}
     </style>
 </head>
 <body>
-    <script></script>
+    <script>
+function msg(){
+    open("Log in.html");
+}
+function opn(){
+    open("Sign up.html");
+}
+    </script>
     <section id="container">
  <div id="img"><img src="cubtechlogo - Copy.jpg" ></div>  
- <div id="logandsign"><input type="button" value="Log in"></div>
+ <div id="logandsign"><input type="button" value="Log in" onclick="msg()"><br>
+<input type="button" value="Sign up" onclick="opn()">
+</div>
 </section>
    <div id="nav">
 <ul>
@@ -107,7 +120,7 @@ input{
 
 <div id="head">Mobiles</div>
 <div id="iphone">
-
+<center>
  <table>
     <tr><td><img src="iphone12mini.png" width="350" height="350"></td></tr> 
     
@@ -115,27 +128,29 @@ input{
     <tr><td>Price: Rs.69,900</td></tr>
     <tr><td>4 GB ram, 64 GB storage, A14 bionic</td></tr>
     <tr><td>Colour:RED, black, blue, green, white</td></tr>
-    
+    <tr><td></td></tr>
     </table>
+</center>
     </div>
 <br> 
     <br>
     <div id="plus8t">
-
+<center>
  <table>
     <tr><td><img src="oneplus8t.png" height="350" width="350"></td></tr> 
     <tr><td>OnePlus 8T 5G</td></tr>
     <tr><td>Price: Rs.45,999</td></tr>
-    <tr><td>12 GB ram, 256 GB storage, Qualcomm Snapdragon 865</td></tr>
+    <tr><td>12 GB ram, 256 GB storage</td></tr>
+    <tr><td> Qualcomm Snapdragon 865</td></tr>
     <tr><td>Colour: Aquamarine Green, Lunar Silver</td></tr>
     
     </table>
+</center>
 </div>
 
+
 <br><br>
-    <br><br>
-<br><br><br><br><br><br><br><br><br><div id="head">TV</div>
-<center></center>
+    <div id="head">TV</div>
 <center> <table>
     <tr><td><img src="OnePlus-TV-3.png" height="350" width="450"></td></tr>
     <tr><td>OnePlus Y Series (43 inches)</td></tr>
